@@ -1,0 +1,13 @@
+{
+  "name": "winstonjs-logger-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leouluz/winstonjs-logger-node.git",
+  "author": "Leonardo Luz <39962306+leouluz@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "winston": "^3.6.0"
+  }
+}
