@@ -1,4 +1,5 @@
 const { createLogger, format, transports } = require('winston')
+const moment = require('moment')
 
 module.exports = createLogger({
   format: format.combine(
@@ -10,7 +11,7 @@ module.exports = createLogger({
     new transports.File({
       maxsize: 5120000,
       maxFiles: 5,
-      filename: `${__dirname}/../logs/log-api.log`
+      filename: `${__dirname}/../logs/log-api-${moment().format('YYYY-MM-DD')}.log`
     }),
     new transports.Console({
       level: 'debug',
